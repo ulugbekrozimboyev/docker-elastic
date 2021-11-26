@@ -1,0 +1,13 @@
+GET _cat/indices?v
+
+put /sales
+
+put /sales/order/123 
+{
+  "orderID" : "123",
+  "orderAmount": "500"
+}
+
+get sales/order/123
+
+delete /sales/
